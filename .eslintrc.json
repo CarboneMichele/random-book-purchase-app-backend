@@ -1,0 +1,86 @@
+{
+    "overrides": [
+        {
+            "files": ["*.ts"],
+            "parser": "@typescript-eslint/parser",
+            "parserOptions": {
+                "project": ["tsconfig.json", "e2e/tsconfig.json"],
+                "createDefaultProgram": true
+            },
+            "extends":  [
+                "plugin:@typescript-eslint/recommended",
+                "prettier",  
+                "plugin:prettier/recommended"
+              ],
+            "rules": {
+                "@typescript-eslint/array-type": [
+                    "error",
+                    {
+                        "default": "array"
+                    }
+                ],
+                "@typescript-eslint/consistent-type-definitions": "error",
+                "@typescript-eslint/dot-notation": "off",
+                "@typescript-eslint/explicit-member-accessibility": [
+                    "off",
+                    {
+                        "accessibility": "explicit"
+                    }
+                ],
+                "@typescript-eslint/no-floating-promises": "off",
+                "@typescript-eslint/naming-convention": [
+                    "error",
+                    {
+                        "selector": ["variable"],
+                        "modifiers": ["static"],
+                        "format": ["UPPER_CASE"]
+                    }
+                ],
+                "@typescript-eslint/member-ordering": [
+                    "error",
+                    {
+                        "default": [
+                            "public-static-field",
+                            "protected-static-field",
+                            "private-static-field",
+                            "public-instance-field",
+                            "protected-instance-field",
+                            "private-instance-field",
+                            "public-decorated-field",
+                            "protected-decorated-field",
+                            "private-decorated-field",
+                            "constructor",
+                            "public-static-method",
+                            "protected-static-method",
+                            "private-static-method",
+                            "public-instance-method",
+                            "protected-instance-method",
+                            "private-instance-method"
+                        ]
+                    }
+                ],
+                "@typescript-eslint/no-var-requires": "off",
+                "@typescript-eslint/no-shadow": "error",
+                "@typescript-eslint/typedef": [
+                    "error",
+                    {
+                        "arrowParameter": true,
+                        "propertyDeclaration": true,
+                        "callSignature": true
+                    }
+                ],
+                "arrow-parens": ["off", "always"],
+                "brace-style": ["error", "1tbs"],
+                "id-blacklist": "off",
+                "id-match": "off",
+                "import/order": "off",
+                "no-underscore-dangle": "off",
+                "no-void": "error",
+                "no-shadow": "off",
+                "object-shorthand": "off",
+                "space-before-function-paren": "off",
+                "@typescript-eslint/explicit-function-return-type": ["error"]
+            }
+        }
+    ]
+}

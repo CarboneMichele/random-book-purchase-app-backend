@@ -1,0 +1,56 @@
+{
+    "folders": [
+        {
+            "path": "./"
+        }
+    ],
+    "settings": {
+        "files.eol": "\n",
+        "typescript.tsdk": "node_modules/typescript/lib",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        },
+        "[typescript]": {
+            "editor.formatOnSave": true,
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[html]": {
+            "editor.formatOnSave": true,
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[yaml]": {
+            "editor.formatOnSave": false
+        },
+        "cSpell.words": [
+            "browserslist",
+            "dbaeumer",
+            "editorconfig",
+            "esbenp",
+            "filesaver",
+            "highcharts",
+            "HNRG",
+            "johnpapa",
+            "karyfoundation",
+            "mydatepicker",
+            "natewallace",
+            "ngneat",
+            "transloco",
+            "vivaxy"
+        ]
+    },
+    "extensions": {
+        "recommendations": [
+            "natewallace.angular2-inline",
+            "angular.ng-template",
+            "johnpapa.angular2",
+            "dbaeumer.vscode-eslint",
+            "esbenp.prettier-vscode",
+            "editorconfig.editorconfig",
+            "streetsidesoftware.code-spell-checker",
+            "karyfoundation.comment",
+            "aaron-bond.better-comments",
+            "vivaxy.vscode-conventional-commits"
+        ]
+    }
+}

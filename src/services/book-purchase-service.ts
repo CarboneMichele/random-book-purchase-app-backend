@@ -45,7 +45,7 @@ export default class BookPurchaseService {
     private async buyBookFromAmazon(bookMetadata: BookMetadata): Promise<void> {
         let browser: Browser;
         try {
-            browser = await puppeteer.launch({ headless: false, executablePath: chromePaths, defaultViewport: null });
+            browser = await puppeteer.launch({ headless: false, executablePath: chromePaths.chrome, defaultViewport: null });
         } catch {
             browser = await puppeteer.launch({ headless: false, defaultViewport: null });
         }
